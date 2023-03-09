@@ -8,9 +8,9 @@ const User = () => {
   useEffect(() => {
     fetch(`https://api.github.com/users/${userId}`)
       .then(res => {
-        if (res.ok) {
-          return res.json();
-        }
+//         if (res.ok) {
+//           return res.json();
+//         }
         throw new Error();
       })
       .then(fetchedUserData => setUserData(fetchedUserData));
